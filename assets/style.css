@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+
+:root {
+    --primary-color: #374981;
+    --secondary-color: #6D7EB0;
+    --tertiary-color: #E0E2DF;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Asap, sans-serif; 
+    color: var(--tertiary-color);
+}
+
+/* Header */
+header {
+    background-image: url(./images/XPR15698.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: rgba(0, 0, 0, 0.5)
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+    margin : 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--tertiary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+/* Section Spacing */
+section {
+    padding: 60px;
+}
+
+/* Hero Section */
+
+.hero{
+    background-image: url(./images/XPR15698.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.hero-cta {
+    font-size: 35px;
+    line-height: 1.2;
+    width: 35%;
+    padding: 75px;
+    text-align: right;
+    margin: 3.5;
+    margin-bottom: 100px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+

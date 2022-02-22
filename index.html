@@ -5,39 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Matthew Songer</title>
+    <title>Matt Songer</title>
 </head>
 <body>
    
    <!--Nav Bar-->
     <header>
-    <h1>MATTHEW SONGER</h1>
+    <h1>MATT SONGER</h1>
     <nav>
         <ul>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Resume</li>
+            <li>
+               <a href="#projects">Projects</a> 
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+               <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
         </ul>
     </nav>
 </header>
 
-<section>
-    <div>
+<!--Hero Section-->
+<section class="hero">
+    <div class="hero-cta">
         <h2>Get To Know Me</h2>
     </div>
 </section>
 
 
 <!--About Me-->
-<section>
-    <div>
-        <h2
-        >About me
+<section id="about-me" class="intro">
+    <div class="flex-row">
+        <h2 class="section-title primary-border">
+        About me
         </h2>
     </div>
     
-    <div>
+    <div class="flex-row"> 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nemo vel, quo deleniti quis iusto eveniet esse cum nam vitae doloribus numquam? Cupiditate quam repellat nihil deleniti id tempore enim?</p>
     </div>
 </section>
@@ -115,13 +124,22 @@
             <p>
                Let me know by filling out the form!
             </p>
+            <form>
+                <label for="contact-name"></label> </br>
+                <input type="text" id="contact-name" placeholder="Your Name"/> </br>
+    
+                <label for="contact-message"></label> 
+                <textarea id="contact-message" cols="20" rows="10" placeholder="Message"></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
 </section>
 
 <!--Footer-->
 <footer>
-    <h2>MATTHEW SONGER</h2>
+    <h2>MATT SONGER</h2>
 </footer>
 
 </body>
