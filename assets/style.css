@@ -15,7 +15,8 @@
 
 body {
     font-family: Asap, sans-serif; 
-    color: var(--tertiary-color);
+    color: var(--tertiaryp-color);
+    background-color: var(--primary-color);
 }
 
 /* Header */
@@ -118,4 +119,170 @@ section {
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+/* About Me */
+
+.intro {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+    
+.section-title  {
+    font-size: 48px;
+    color: var(--tertiary-color);
+    border-right: 3px solid;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: 0;
+    width: fit-content;
+}
+
+.project-list {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.project-info h4 {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    font-size: 23px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+  }
+
+  .contact {
+      
+      background: var(--secondary-color);
+}
+
+  .contact h2 {
+      color: var(--primary-color);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info iframe {
+      
+      height: 400px;
+}
+
+  .contact-info div {
+    color: white;
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    font-size: 32px;
+  }
+  
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  .contact-info a {
+    color: var(--primary-color);
+  }
+
+  .contact-form, .contact-form textarea {
+      border: 1ps solid var(--secondary-color);
+      border-radius: 10px;
+      display: block;
+      padding: 7px 15px;
+      font-size: 16px;
+      color: var(--secondary-color);
+      width: 100%;
+      margin-bottom: 15px;
+      margin-top: 5px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  .contact-form button:hover {
+      color: var(--primary-color);
+      background: var(--tertiary-color);
+  }
+
+ #contact-name {
+     background-color: #fff;
+ }
+
+  #contact-name, #contact-message {
+    margin: 5px auto;
+    padding: 5px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.75);
+    outline: none;
+    border-radius: 5px;
+  }
+
+  .contact-info input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+  }
 
