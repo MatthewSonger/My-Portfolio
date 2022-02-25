@@ -99,6 +99,16 @@ section {
     padding: 60px;
 }
 
+    
+.section-title  {
+    font-size: 48px;
+    color: var(--tertiary-color);
+    border-right: 3px solid;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: 0;
+    width: fit-content;
+}
 /* Hero Section */
 
 .hero{
@@ -117,11 +127,11 @@ section {
     font-size: 35px;
     line-height: 1.2;
     width: 35%;
-    padding: 75px;
+    padding: 43px;
     text-align: right;
     margin: 3.5;
     margin-bottom: 100px;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -129,6 +139,10 @@ section {
     align-items: flex-end;
 }
 
+
+.hero h2 {
+    background-color: rgba(109, 126, 176,0.75)
+}
 /* About Me */
 
 .intro {
@@ -147,16 +161,7 @@ section {
     padding: 20px;
 }
 
-    
-.section-title  {
-    font-size: 48px;
-    color: var(--tertiary-color);
-    border-right: 3px solid;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin: 0;
-    width: fit-content;
-}
+
 
 .project-list {
     display: flex;
@@ -183,20 +188,46 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     flex: 1;
-    margin: 20px;
+    margin: 5px;
     background: var(--secondary-color);
    
 }
 
+
+
+
+#first-project {
+  display: grid;
+  grid-template-columns: 1150px;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+#first-project img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.project a {
+    text-decoration: none;
+}
+
 .project img {
     width: 100%;
+    
 }
 
 .project-info {
     flex: 2 70%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center; 
+    align-content: flex-start; 
+    box-sizing:content-box;
 }
 
 .project-info h4 {
@@ -218,6 +249,7 @@ section {
     display: flex;
     flex-direction: row;
 }
+
 
 .flex-row {
     display: flex;
