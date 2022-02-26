@@ -119,11 +119,16 @@ section {
     background-position: 80%;
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-self: center;
+    align-content: flex-end;
+    font-size: 35px;
+    color: var(--tertiary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
 
-.hero-cta {
+/*.hero-cta {
     font-size: 35px;
     line-height: 1.2;
     width: 35%;
@@ -137,12 +142,14 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-}
+}*/
 
 
-.hero h2 {
+/*.hero h2 {
     background-color: rgba(109, 126, 176,0.75)
 }
+*/
+
 /* About Me */
 
 .intro {
@@ -169,6 +176,7 @@ section {
     justify-content: flex-start;
     align-items: flex-start;
     flex: 2 70%;
+    
    
 }
 
@@ -259,9 +267,7 @@ section {
 }
 
 
-.flex-row {
-    display: flex;
-}
+
 
 .contact {
     background-color: var(--secondary-color);
@@ -333,9 +339,54 @@ section {
     border-radius: 15px;
     text-shadow: none;
 }
+/* Portrait and Landscape */
+@media only screen and (max-width: 575px) { 
+    
+    header {
+        display: flex;
+        justify-content: center;
+    
+    }
 
-@media screen and (max-width:400) {
-   .project {
-       flex: 0 100%;
-   }
-   }
+    .hero {
+        justify-content: center;
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+        font-size: 15px;
+       
+    }
+
+    .hero h2{
+        justify-content: center;
+        padding: 10px;
+        margin-left: 70px;
+    }
+    
+    .section-title {
+        border-right: none;
+        border-bottom: 1px solid var(--tertiary-color);
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+     .project-list {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .projects {
+        display: flex;
+    }
+
+    
+  
+}
