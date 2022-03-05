@@ -11,4 +11,4 @@ For the purpose of showing my skills to potential employers.
 HTML & CSS
 
 ## Live Site
-matthewsonger.com
+http://matthewsonger.com/
